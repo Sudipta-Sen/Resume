@@ -1,0 +1,293 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{10pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Sudipta Sen} \\ \vspace{1pt}
+
+    \small { \raisebox{-0.1\height}\faPhone\ \underline{+91-8240824188} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sensudipta779@gmail.com}} ~ 
+    \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin.com/in/sudipta-sen-10127a170}}  ~
+    \href{https://leetcode.com/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{leetcode.com/sudipta1495}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Allahabad}{Sept 2021 -- May 2023}
+      {Master of Information Technology - \textbf{CGPA} - \textbf{9.33/10}}{Prayagraj, U.P}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of Calcutta}{Oct 2017 -- July 2020}
+      {Masters in Computer Application - \textbf{Percentage} - \textbf{85.6\%}}{Kolkata, W.B}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bidhannagar College, West Bengal State University}{Aug 2013 -- July 2016}
+      {Bachelor Of Science (Mathematics) - \textbf{Percentage} - \textbf{59.79\%}}{Bidhannagar, W.B}
+  \resumeSubHeadingListEnd
+\section{EXPERIENCE}
+
+	\resumeSubHeadingListStart
+
+	\resumeSubheading
+      {Indian Institute of Information Technology Allahabad}{Prayagraj, U.P}
+      {\underline{Undergraduate Teaching Assistant}}{Oct 2021 -- Present}
+      \begin{enumerate}
+		\item Assisting instructors in managing development and evaluation of course assignments.
+		\item Providing the professor with feedback related to student performance.
+	  \end{enumerate}
+    \resumeSubheading
+      {Alumnus Software Limited}{Kolkata, W.B}
+      {\underline{Member of Technical Staff Grade I}}{Feb 2021 -- Sept 2021}
+      \begin{enumerate}
+      \item \textbf{ATM bonding asymmetric line rate test automation framework development: }\newline
+      Goal of the framework to test the ATM bonding driver performence automatically based on different scenario. Important tasks performed by the framework was -
+      \begin{enumerate} 
+      \item Establishing communication between testing PC and Master PC. Communication is established via CPE if the testing PC does not reside in the same LAN and if the testing PC resides in the same LAN as of master pc then communication is established using ssh.
+      \item Run iperf client in LAN and after running a session with online iperf server, parsing the output to get the desired result. 
+      \item Set hardware shaper rule.
+      \item Setting QoS priotization.
+      \item \textbf{Achievement:} Manual effort of 1 day reduced to less than 3 hours with no manual error.
+      \end{enumerate}
+      \item \textbf{SoC power managment validation:}\newline
+      Design automated test cases for power and thermal management-
+      \begin{enumerate}
+      \item Switching between governors performance,powersave and userspace.
+      \item Automatic shutdown of system in case of thermal overheat.
+      \item CPU frequency driver is supported and in use
+      \item Verify whether we were able to force cpu to offline
+      \item Verify the behavior of cpu scaling with cpu utilization
+      \item Verify the behavior of cpu scaling with cpu utilization along with thermal event
+      \end{enumerate}
+      \item \textbf{Wireless performance and functional validation:}
+      \end{enumerate}
+		
+
+\vspace{-10pt}
+	  \resumeSubheading  
+      {}{}
+      {\underline{Trainee Engineer}}{Aug 2020 -- Jan 2021}
+	   %-----------------------------
+	   \begin{enumerate}
+      	\item \textbf{Automation of power imbalance forecasting and account profitability analyses using PowerApps and PowerBI:} 
+      	\begin{enumerate}
+      	\item Automate energy forecast calculation based on previously consumed energy and new/lost customers. Forecasting can be done for any future month and year.
+      	\item Automate customer profitability calculation for a month for each customer type (domestic and commercial).
+      	\item Calculation of the unit selling price for a given profit margin and cost constants.
+      	\end{enumerate}
+      \item \textbf{Log analyser using python:}
+	      	\begin{enumerate}
+	      		\item Given a passed and failure log this program compare both the log and highlight the difference between them that will help the tester or programmer to find out the exact reason of failure. This program also parse output of various Linux commands like ifconfig, ps, top, uname, lshw, lscpu, netstat, ping separately that will help to understand the system state
+	      	\end{enumerate}
+	     \end{enumerate}
+\vspace{10pt}
+	\resumeSubheading
+      {Indus Net Technologies}{Kolkata, W.B}
+      {\underline{Technical Support Engineer}}{Apr 2017 -- Oct 2017}
+	  \begin{enumerate}
+	  \item Works as a intermediator between customer care and technical team for Lycachat.
+	  \end{enumerate}
+  \resumeSubHeadingListEnd
+  
+
+%------RELEVANT COURSEWORK-------
+\vspace{-20pt}
+\section{TECHNICAL SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                \item Computer Network
+                \item Database Management System (DBMS)
+                \item C++
+                \item Python
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\vspace{-10pt}
+\section{PUBLICATION}
+\begin{itemize}
+\item \textbf{Recommendation of Influenced Products Using Association Rule Mining: Neo4j as a Case Study:} In this paper the recommendation system has been built based on association rule mining. A new association rule mining technique is proposed for quick decision-making which gives better performance over Apriori algorithm.The entire framework has been developed in Neo4j graph data model for doing the data modelling from raw text file and also to perform the analysis {\href{https://link.springer.com/article/10.1007/s42979-021-00460-8}{\raisebox{-0.1\height}\faExternalLink }}
+\end{itemize}
+    
+ 
+ %-----------CERTIFICATIONS---------------
+ \vspace{-30pt}
+\section{ACHIEVEMENT}
+\begin{itemize} 
+\item Qualify UGC-NET for eligibility for Assistant Professor on 4th December, 2019 in subject Computer Science and Applications.
+\end{itemize} 
+
+\vspace{-30pt}
+\section{PERSONAL SKILLS}
+	%\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Team Player
+                \item Quick Learner
+                \item Positive Attitude
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+\section{PERSONAL DETAILS}
+\begin{itemize} 
+\item \textbf{Date of Birth:} 14th July, 1995
+\vspace{-10pt}
+\item \textbf{languages known: } English, Hindi, Bengali
+\end{itemize} 
+
+\end{document}
+© 2022 Overleaf English|Privacy and TermsSecurityContact UsAboutBlogOverleaf on TwitterOverleaf on FacebookOverleaf on LinkedIn
